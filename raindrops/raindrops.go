@@ -2,6 +2,11 @@ package raindrops
 
 import "fmt"
 
+/*
+* Problem name: Rain Drops
+* Difficult: Easy
+ */
+
 func Convert(number int) string {
 
 	var s string
