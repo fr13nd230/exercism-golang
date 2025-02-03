@@ -13,20 +13,16 @@ func CollatzConjecture(n int) (int, error) {
 		return 0, fmt.Errorf("Number {n} must be in the set N*, got: %v", n)
 	}
 
-	if n == 1 {
-		return 0, nil
-	}
-
 	steps := 0
 
 	for n != 1 {
 		if n%2 == 0 {
 			n /= 2
-			steps++
 		} else {
 			n = (3 * n) + 1
-			steps++
 		}
+
+		steps++
 	}
 
 	return steps, nil

@@ -1,6 +1,9 @@
 package raindrops
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
 
 /*
 * Problem name: Rain Drops
@@ -25,5 +28,5 @@ func Convert(number int) string {
 		return s
 	}
 
-	return fmt.Sprint(number)
+	return strconv.Itoa(number)
 }
